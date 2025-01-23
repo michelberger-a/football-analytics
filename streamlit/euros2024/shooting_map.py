@@ -8,8 +8,6 @@ st.title("Euros 2024 Shotmap")
 st.subheader("Select the team/player to see the shots taken throughout the tournament")
 
 df = pd.read_csv('euros_2024_shot_map.csv')
-# for testing, see if this loads in terminal
-# print(df.head())
 
 # filter for shots only
 df = df[df['type'] == 'Shot'].reset_index(drop=True)
